@@ -1,47 +1,63 @@
-# Mysteria AI — Autonomous Digital Business Platform
+# Autonomous AI Business Platform — première activité : Mysteria
 
-> Repository name: `ysteria-ai-autonomous-business-platform` (historical slug). Product and working brand: **Mysteria AI**.
+> Dépôt : `zdmooc/ysteria-ai-autonomous-business-platform`. Le slug historique `ysteria` est conservé ; **Mysteria** est une marque de travail, à vérifier avant usage commercial.
 
 ## Vision
-Build a multilingual, AI-native digital company that identifies viable opportunities in esotericism, mysteries, unexplained phenomena and cultural storytelling, creates original products and media, operates approved distribution channels, sells digital goods and subscriptions, and optimizes based on **net margin**, subject to human-defined authority boundaries.
 
-The platform is a **business operating system**, not only a mobile application. Websites, mobile apps, marketplaces, newsletters and social media channels are independently selectable go-to-market channels.
+Construire un **système d'exploitation d'entreprise numérique piloté par des agents IA** qui :
+1. découvre des opportunités commerciales vérifiables ;
+2. propose et produit des biens ou services originaux ;
+3. les distribue par des canaux autorisés (site, contenus, marketplaces, éventuellement applications) ;
+4. mesure encaissements, coûts complets, satisfaction et marge ;
+5. propose de poursuivre, corriger ou arrêter une expérimentation dans les limites d'autorité fixées.
 
-## Principles
-- **Human-controlled capital:** no spending, account opening, irreversible publication, contracts or platform policy bypass outside explicit authorization.
-- **Truthfulness:** label entertainment, symbolic readings, fiction, hypotheses and documented facts. Never invent evidence or testimonials or exploit fear.
-- **Multi-agent with audit trails:** decision proposals, evidence, approval, execution, measurement, rollback.
-- **FinOps first:** provider quotas, hard budgets, unit economics, observability and emergency kill switch.
-- **Platform portability:** container-first; Terraform; defer Kubernetes and owned GPUs until economically warranted.
-- **Compliance:** GDPR, consumer protection, payments, AI/media disclosures, intellectual property and each channel's API/marketplace terms.
+**La plateforme technologique est indépendante du secteur. Mysteria est sa première activité commerciale**, consacrée aux traditions ésotériques, aux interprétations symboliques, aux mystères et aux contenus culturels documentés. D'autres activités pourront être lancées si la demande réelle le justifie.
 
-## MVP
-1. Multilingual responsive website (initially French and English; expand from verified demand).
-2. AI research, editorial planning and original articles/video production with review gates.
-3. Content scheduling to approved channels via supported APIs.
-4. Digital product catalogue, payment checkout and customer support workflow.
-5. AI CEO *proposes* opportunities, launches controlled experiments, and measures conversion/margins.
-6. Amazon/KDP as a **separate approval-dependent integration**, not a presumed autonomous publishing API.
+## Trois périmètres
 
-## High-level modules
-- `apps/web`: public website, editorial content and commerce.
-- `apps/admin`: operations cockpit, budgets, approvals and audit.
-- `services/api`: API, identity integration, tenancy, catalogues and orders.
-- `agents/`: research, editor, production, marketing, commerce, finance, compliance, AI CEO.
-- `integrations/`: social publishing, payment providers and marketplaces.
-- `infra/`: IaC, deployment, secrets strategy, logging and backup.
-- `docs/`: strategy, roadmap, economics, architecture and governance.
+| Couche | Mission | Limite |
+|---|---|---|
+| **Core Platform** | Agents, orchestration, outils, permissions, paiements, audit, coûts | Aucune dépendance au thème ésotérique |
+| **Business Ventures** | Marques, produits, catalogues, contenus, langues, canaux de vente | Mysteria est le premier cas d'usage |
+| **Experimentation & FinOps** | Hypothèses, tests, attribution, CAC, marge, arbitrages | Réinvestissement soumis aux budgets autorisés |
 
-## Delivery gates
-- **M0** Cadrage and documented baseline.
-- **M1** Reproducible local stack and CI.
-- **M2** Agent orchestration and budget/approval/audit controls.
-- **M3** Content production, quality and scheduled publication.
-- **M4** Web storefront and payment test-to-live flow.
-- **M5** Marketplace integrations subject to provider permissions.
-- **M6** Operational launch and first measured unit economics.
+## Produit de départ
 
-## Current state
-**Cadrage / NOT DEPLOYED.** No cloud resources, paid accounts, posts, transactions or live storefront have been created by this repository.
+**Une seule boucle commerciale prouvée**, et non neuf agents, dix réseaux sociaux et plusieurs applications dès le départ :
 
-See [financial baseline](docs/BUDGET-BASELINE.md), [architecture](docs/ARCHITECTURE.md) and [roadmap](docs/ROADMAP.md).
+**opportunité → produit → publication → vente → mesure de marge → proposition de décision**.
+
+- Premier canal propriétaire : **site web responsive** et blog en français, puis traduction anglaise après contrôle qualité.
+- Première offre à tester : **un guide numérique original** sur un thème culturel/mystérieux, à prix hypothétique de **6,99 €**.
+- Acquisition : contenu éditorial et **au plus deux canaux externes** avec intégrations officielles.
+- Paiement : fournisseur hébergé (mode test, puis réel après validation de conformité).
+- Amazon KDP, plusieurs marques, application mobile, OpenShift et GPU dédiés : **extensions, pas prérequis**.
+- Aucune vente ou conversion n'est acquise : chaque hypothèse doit être mesurée.
+
+## Principes non négociables
+
+- **IA décisionnelle, pas pouvoir illimité** : décisions économiques consignées, budgets plafonnés, approbation humaine des dépenses, contrats, premières mises en ligne et changements à risque.
+- **Vérité et transparence** : distinguer connaissances établies, hypothèses, traditions, fiction et contenu symbolique ; interdiction de fausses preuves ou témoignages et des ventes fondées sur la peur.
+- **Qualité plutôt que volume** : contenu original, droits vérifiés, citations des sources lorsque nécessaires et respect des conditions des plateformes.
+- **FinOps dès M1** : coût par produit et par canal, quotas, alerte, coupe-circuit, suivi de marge nette.
+- **Local et portable** : conteneurs, API hébergées, infrastructure IaC minimale. Ne pas réserver de cluster Kubernetes/GPU permanent sans démonstration du besoin.
+- **Sécurité et conformité** : données minimales, RGPD, droit de la consommation, déclaration de contenus IA, règles des moyens de paiement et marketplaces.
+
+## Références de cadrage
+
+- [Vision et découpage produit](docs/VISION-AND-VENTURES.md)
+- [Architecture technique](docs/ARCHITECTURE.md)
+- [Budget et financement par étapes](docs/BUDGET-BASELINE.md)
+- [Roadmap et preuves de sortie](docs/ROADMAP.md)
+- [Expériences commerciales et indicateurs](docs/EXPERIMENTATION.md)
+- [Gouvernance des agents et limites d'autonomie](docs/AGENT-GOVERNANCE.md)
+- [Risques et conditions de lancement](docs/RISK-REGISTER.md)
+- [ADR de séparation cœur / activités](docs/adr/ADR-0001-separate-core-and-ventures.md)
+
+## Statut au 10/10/2026
+
+**DOCUMENTATION UNIQUEMENT — PAS DE MVP FONCTIONNEL, PAS DE DEPLOIEMENT, PAS DE VENTE.**
+
+M0 = cadrage documentaire initial réalisé. M1–M6 non réalisés ; aucune preuve d'exploitation commerciale n'existe dans ce dépôt.
+
+Dépôts techniques connexes (Terraform, GitOps, architecture agentique) : **réutilisation possible** de motifs, **sans dépendance obligatoire**. Le dépôt `cadrage_202682030` n'est pas modifié par le présent chantier.
