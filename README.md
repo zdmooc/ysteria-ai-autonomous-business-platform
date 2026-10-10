@@ -56,6 +56,8 @@ Construire un **système d'exploitation d'entreprise numérique piloté par des 
 
 ## Statut au 10/10/2026
 
+**PROGRAMME EN PAUSE VOLONTAIRE : priorité à l'obtention d'une mission freelance.** La reprise est conditionnée à la sécurisation d'une mission professionnelle par le porteur du projet ; aucune date de reprise ni budget d'exécution n'est fixé. Le cadrage M0 et les documents existants sont conservés en l'état. Ne pas engager de nouvelles dépenses, lancer des déploiements ou démarrer M1 avant décision explicite de reprise.
+
 **DOCUMENTATION UNIQUEMENT — PAS DE MVP FONCTIONNEL, PAS DE DEPLOIEMENT, PAS DE VENTE.**
 
 M0 = cadrage documentaire initial réalisé. M1–M6 non réalisés ; aucune preuve d'exploitation commerciale n'existe dans ce dépôt.
