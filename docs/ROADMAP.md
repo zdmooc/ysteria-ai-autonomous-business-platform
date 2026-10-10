@@ -2,6 +2,15 @@
 
 **État initial : cadrage seulement (10/10/2026).** Les jalons sont des objectifs, pas des réalisations. Une preuve Git, un test et, lorsque pertinent, un événement de production sont nécessaires pour toute fermeture.
 
+## Décision de mise en pause — 10/10/2026
+
+- **Statut du programme : PAUSED / ON HOLD (décision du porteur).**
+- **Motif et priorité externe :** recherche et obtention d'une mission freelance ; Mysteria AI n'est pas prioritaire avant ce jalon professionnel.
+- **Condition de reprise :** le porteur confirme avoir obtenu une mission et décide explicitement de reprendre ce projet ; il n'y a **pas de date de reprise planifiée**.
+- **État à préserver :** M0 documentaire effectué ; M1 à M6 non démarrés ; aucune infrastructure commerciale déployée et aucun revenu réalisé.
+- **Décision budgétaire :** enveloppe de 5 000 € = hypothèse de planification, **non engagée** ; pas de dépenses ni de mise en ligne à déclencher pendant la pause.
+- **Au retour :** relire README, ARCHITECTURE, BUDGET-BASELINE, ROADMAP, EXPERIMENTATION, AGENT-GOVERNANCE et RISK-REGISTER ; réexaminer coûts/règles des plateformes ; puis ouvrir M1 avec l'hypothèse commerciale et le socle local minimal.
+
 ## Règle de priorisation
 
 **Ne jamais avancer l'industrialisation plus vite que la validation commerciale.** La chaîne cible est :
